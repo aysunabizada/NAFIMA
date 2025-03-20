@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    box-shadow: #FFD0EC 0px 10px 10px -10px;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
