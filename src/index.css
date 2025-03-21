@@ -4,11 +4,49 @@
     font-family: "Montserrat", sans-serif;
 }
 
-header {
+/* header {
     box-shadow: #FFD0EC 0px 10px 10px -10px;
-}
+} */
 
 .container {
     width: 85%;
     margin: auto;
+}
+
+.popover{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.popover-open:hover .popover{
+    display: block;
+}
+
+.polygon{
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    width: 50px;
+    height: 25px;
+    background-color: #DBDFEA;
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+}
+
+.box:hover h3{
+    color: #a93d92;
+    transition: all 0.5s;
+}
+
+.box:hover .icon{
+    background: #a93d92;
+    transition: all 0.5s;
+}
+
+.box:hover{
+    box-shadow: rgba(240, 46, 169, 0.251) 0px 5px, rgba(240, 46, 169, 0.187) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
