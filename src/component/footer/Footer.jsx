@@ -51,8 +51,8 @@ const navigation = [
 
 function Footer() {
     return (
-        <footer className="bg-[#474F7A] h-[15vh] text-white">
-            <div className="container flex flex-col lg:flex-row lg:justify-between justify-center items-center h-full">
+        <footer className="bg-[#161A30] py-5 text-white">
+            <div className="container flex flex-col gap-3 lg:flex-row lg:justify-between justify-center items-center h-full">
                 <div className="flex justify-center space-x-6 md:order-2">
                     {navigation.map((item) => (
                         <a key={item.name} href={item.href} className="text-gray-400 transition-all duration-300 hover:text-gray-200">

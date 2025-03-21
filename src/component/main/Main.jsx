@@ -1,7 +1,15 @@
 import { ChatBubbleLeftRightIcon, FaceSmileIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import { useEffect, useState } from 'react';
+import CountUp from 'react-countup';
 import { Link } from 'react-router';
 
 function Main() {
+    const [startCount, setStartCount] = useState(false);
+
+    useEffect(() => {
+        setStartCount(true);
+    }, [])
+
     return (
         <>
             <main className="bg-[#31304D] text-white">
@@ -18,8 +26,8 @@ function Main() {
                         <h1 className="text-4xl font-bold tracking-widest text-white md:text-5xl lg:text-6xl">NAFİMA</h1>
                         <span className='text-lg italic tracking-wider text-[#81689D]'>Səssizləri eşit, ədaləti yaşat!</span>
                         <p className="mt-6 sm:h-[3vh] h-[80vh] max-w-7xl text-lg text-gray-300">
-                            Biz 24/7 məxfi şəkildə zorakılıqdan əziyyət çəkən hər kəsə dəstək oluruq. Yüksək müraciət səbəbindən cavab gecikə bilər. 
-                            Təhlükəsiz gözləyə bilmirsinizsə və ya əlaqə saxlamağa hazır deyilsinizsə, 
+                            Biz 24/7 məxfi şəkildə zorakılıqdan əziyyət çəkən hər kəsə dəstək oluruq. Yüksək müraciət səbəbindən cavab gecikə bilər.
+                            Təhlükəsiz gözləyə bilmirsinizsə və ya əlaqə saxlamağa hazır deyilsinizsə,
                             Yardım alın bölməsindən ərazinizdəki resurslar və dəstək xidmətləri barədə məlumat əldə edə bilərsiniz.
                             <br /> <b>Unutma, sən tək deyilsən – biz buradayıq!</b>
                         </p>
@@ -58,6 +66,78 @@ function Main() {
                         </Link>
                     </div>
                 </section>
+                <section className="pt-16 lg:py-24">
+                    <div className="bg-[#161A30] pb-16 lg:relative lg:z-10 lg:pb-0">
+                        <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
+                            <div className="relative lg:-my-8">
+                                {/* <div aria-hidden="true" className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden" /> */}
+                                <div className="mx-auto max-w-md px-6 sm:max-w-3xl lg:h-full lg:p-0">
+                                    <div className="aspect-w-10 pt-5 lg:pt-0 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+                                        <img
+                                            className="object-cover lg:h-full rounded-xl lg:w-full"
+                                            src="https://www.psychotherapynetworker.org/wp-content/uploads/2022/07/iStock.-salim-hanzaz.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="mt-12 lg:col-span-2 lg:m-0 lg:pl-8">
+                                <div className="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0 lg:py-20">
+                                    <blockquote>
+                                        <div>
+                                            <svg
+                                                className="h-12 w-12 text-white opacity-25"
+                                                fill="currentColor"
+                                                viewBox="0 0 32 32"
+                                                aria-hidden="true"
+                                            >
+                                                <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                                            </svg>
+                                            <p className="mt-6 text-lg font-medium text-white">
+                                                Uzun müddət susurdum, çünki qorxurdum və anlaşılmayacağımı düşünürdüm. Zorakılıq yalnız fiziki deyil, psixoloji yükü daha ağır olur. Dəstək almaq mənim üçün dönüş nöqtəsi oldu – məni günahlandıran yox, anlayan insanlar tapdım.
+                                                Artıq bilirəm ki, səssiz qalmaq çıxış yolu deyil, əsl güc danışmaqdan başlayır!
+                                            </p>
+                                        </div>
+                                        <footer className="mt-6">
+                                            <p className="text-sm text-white">Ailə zorakılığından əziyyət çəkən biri</p>
+                                            <p className="text-base font-medium text-indigo-100">Anonim</p>
+                                        </footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* NAFIMA in numbers*/}
+                <div className="mx-auto max-w-7xl py-12 px-6 sm:py-16 lg:px-8 lg:py-20">
+                    <div className="mx-auto pb-5 max-w-4xl text-center">
+                        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                            NAFİMA - Dəstəyimiz Rəqəmlərlə
+                        </h2>
+                        <p className="mt-3 text-xl text-indigo-200 sm:mt-4">
+                            Zorakılıqla mübarizədə güc birlikdədir!
+                        </p>
+                    </div>
+                    <dl className="mt-10 text-center sm:mx-auto sm:grid sm:max-w-3xl sm:grid-cols-3 sm:gap-12">
+                        <div className="flex flex-col">
+                            <dt className="order-2 mt-2 text-xs leading-6 text-indigo-200">Fərqli bölgələrdə <br /> xidmətlər</dt>
+                            <dd className="order-1 text-6xl font-bold tracking-tight text-white">
+                                {startCount && <CountUp start={0} end={50} duration={2} />}+
+                            </dd>
+                        </div>
+                        <div className="mt-10 flex flex-col sm:mt-0">
+                            <dt className="order-2 mt-2 text-xs leading-6 text-indigo-200">Günün istənilən <br /> vaxtı dəstək</dt>
+                            <dd className="order-1 text-6xl font-bold tracking-tight text-white">24/7</dd>
+                        </div>
+                        <div className="mt-10 flex flex-col sm:mt-0">
+                            <dt className="order-2 mt-2 text-xs leading-6 text-indigo-200"> Yardım göstərilən <br /> fərdlərin sayı</dt>
+                            <dd className="order-1 text-6xl font-bold tracking-tight text-white">
+                                {startCount && <CountUp start={0} end={10000} duration={2} />}+
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
             </main>
         </>
     )

@@ -17,7 +17,7 @@ function Header() {
                 </Link>
 
                 {/* Desktop Menyu */}
-                <div className="hidden lg:flex items-center gap-[4vw] font-semibold">
+                <div className="hidden lg:flex text-nowrap items-center gap-[4vw] font-semibold">
                     <Link to={""} className="transition-all relative duration-300 popover-open">Identify Abuse
                         <div className="popover text-nowrap bg-[#DBDFEA] p-5 rounded-md">
                             <span className="polygon"></span>
