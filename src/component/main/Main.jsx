@@ -5,7 +5,7 @@ function Main() {
     return (
         <>
             <main className="bg-[#31304D] text-white">
-                <div className="relative min-h-[80vh]">
+                <div className="relative min-h-[85vh]">
                     <div className="absolute inset-0">
                         <img
                             className="h-full w-full object-cover"
@@ -14,10 +14,10 @@ function Main() {
                         />
                         <div className="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true" />
                     </div>
-                    <div className="relative container py-24 sm:py-24">
+                    <div className="relative container py-16 sm:py-24">
                         <h1 className="text-4xl font-bold tracking-widest text-white md:text-5xl lg:text-6xl">NAFİMA</h1>
                         <span className='text-lg italic tracking-wider text-[#81689D]'>Səssizləri eşit, ədaləti yaşat!</span>
-                        <p className="mt-6 max-w-7xl text-xl text-gray-300">
+                        <p className="mt-6 sm:h-[3vh] h-[80vh] max-w-7xl text-lg text-gray-300">
                             Biz 24/7 məxfi şəkildə zorakılıqdan əziyyət çəkən hər kəsə dəstək oluruq. Yüksək müraciət səbəbindən cavab gecikə bilər. 
                             Təhlükəsiz gözləyə bilmirsinizsə və ya əlaqə saxlamağa hazır deyilsinizsə, 
                             Yardım alın bölməsindən ərazinizdəki resurslar və dəstək xidmətləri barədə məlumat əldə edə bilərsiniz.
