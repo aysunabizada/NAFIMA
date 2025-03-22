@@ -2,6 +2,7 @@ import { ChatBubbleLeftRightIcon, FaceSmileIcon, PhoneIcon } from '@heroicons/re
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import { Link } from 'react-router';
+import bg from '../../assets/img/GettyImages_1200658642.webp';
 
 function Main() {
     const [startCount, setStartCount] = useState(false);
@@ -17,8 +18,8 @@ function Main() {
                     <div className="absolute inset-0">
                         <img
                             className="h-full w-full object-cover"
-                            src="https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/19833176/GettyImages_1200658642.jpg?quality=90&strip=all&crop=0,13.346404083332,100,73.307191833337"
-                            alt=""
+                            src={bg}
+                            alt="bg"
                         />
                         <div className="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true" />
                     </div>
