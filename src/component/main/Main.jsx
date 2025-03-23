@@ -3,6 +3,10 @@ import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import { Link } from 'react-router';
 import bg from '../../assets/img/GettyImages_1200658642.webp';
+import { PiShootingStar } from "react-icons/pi";
+import { BiPhoneCall } from "react-icons/bi";
+import { TfiCommentAlt } from "react-icons/tfi";
+import Slider from './Slider';
 
 function Main() {
     const [startCount, setStartCount] = useState(false);
@@ -13,6 +17,20 @@ function Main() {
 
     return (
         <>
+            {/* <div className="fixed inset-x-0 bottom-0 z-[99]">
+                <div className="bg-[#B6BBC4]">
+                    <div className="mx-auto font-bold sm:flex-row flex-col sm:text-lg flex justify-center gap-[5vw] max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
+                        <Link to='tel:+99450XXXXXXX' className='flex gap-3 items-center text-[#31304D] hover:text-[#81689D] transition-all duration-300'>
+                            <BiPhoneCall className='text-xl bg-[#6e5888] p-3 text-white w-14 h-14 rounded-full' />
+                            Call us: +994 XX XXX XX XX
+                        </Link>
+                        <Link to='https://wa.me/+99450XXXXXXX' className='flex gap-3 items-center text-[#31304D] hover:text-[#81689D] transition-all duration-300'>
+                            <TfiCommentAlt className='text-xl bg-[#6e5888] p-3 text-white w-14 h-14 rounded-full' />
+                            Text us on WhatsApp: +994 XX XXX XX XX
+                        </Link>
+                    </div>
+                </div>
+            </div> */}
             <main className="bg-[#31304D] text-white">
                 <div className="relative min-h-[85vh]">
                     <div className="absolute inset-0">
@@ -67,47 +85,12 @@ function Main() {
                         </Link>
                     </div>
                 </section>
-                <section className="pt-16 lg:py-24">
-                    <div className="bg-[#161A30] pb-16 lg:relative lg:z-10 lg:pb-0">
-                        <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
-                            <div className="relative lg:-my-8">
-                                {/* <div aria-hidden="true" className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden" /> */}
-                                <div className="mx-auto max-w-md px-6 sm:max-w-3xl lg:h-full lg:p-0">
-                                    <div className="aspect-w-10 pt-5 lg:pt-0 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-                                        <img
-                                            className="object-cover lg:h-full rounded-xl lg:w-full"
-                                            src="https://www.psychotherapynetworker.org/wp-content/uploads/2022/07/iStock.-salim-hanzaz.jpg"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="mt-12 lg:col-span-2 lg:m-0 lg:pl-8">
-                                <div className="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0 lg:py-20">
-                                    <blockquote>
-                                        <div>
-                                            <svg
-                                                className="h-12 w-12 text-white opacity-25"
-                                                fill="currentColor"
-                                                viewBox="0 0 32 32"
-                                                aria-hidden="true"
-                                            >
-                                                <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                                            </svg>
-                                            <p className="mt-6 text-lg font-medium text-white">
-                                                Uzun müddət susurdum, çünki qorxurdum və anlaşılmayacağımı düşünürdüm. Zorakılıq yalnız fiziki deyil, psixoloji yükü daha ağır olur. Dəstək almaq mənim üçün dönüş nöqtəsi oldu – məni günahlandıran yox, anlayan insanlar tapdım.
-                                                Artıq bilirəm ki, səssiz qalmaq çıxış yolu deyil, əsl güc danışmaqdan başlayır!
-                                            </p>
-                                        </div>
-                                        <footer className="mt-6">
-                                            <p className="text-sm text-white">Ailə zorakılığından əziyyət çəkən biri</p>
-                                            <p className="text-base font-medium text-indigo-100">Anonim</p>
-                                        </footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
+                <section className='container'>
+                    <div className='py-8 font-bold md:text-center'>
+                        <h2 className='md:text-4xl text-3xl'>Hər kəs düzgün davranışa layiqdir!</h2>
+                        <p className='flex gap-3 text-sm md:justify-center text-[#9290C3] italic py-4 items-center'><PiShootingStar className='text-5xl text-[#a93d92]' /> Özünü hazır hiss etdiyin an bizə yaza bilərsən.</p>
                     </div>
+                    <Slider />
                 </section>
 
                 {/* NAFIMA in numbers*/}

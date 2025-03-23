@@ -1,5 +1,6 @@
 import { Disclosure } from '@headlessui/react';
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
+import { useEffect } from 'react';
 
 const faqs = [
     {
@@ -35,6 +36,10 @@ const faqs = [
 ]
 
 function FAQ() {
+    useEffect(() => {
+        document.title = "Tez-tez verilən suallar - NAFİMA"
+    },[])
+
     return (
         <main className="bg-[#31304D] text-white">
             <div className="py-20 sm:py-32 lg:py-20 lg:px-0">
@@ -87,7 +92,7 @@ function FAQ() {
                                 type="email"
                                 autoComplete="email"
                                 required
-                                className="w-full rounded-md bg-white border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700"
+                                className="w-full rounded-md bg-white border-white text-black px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700"
                                 placeholder="Email adresinizi yazın"
                             />
                             <button
@@ -98,9 +103,9 @@ function FAQ() {
                             </button>
                         </form>
                         <p className="mt-3 text-sm text-indigo-100">
-                        Biz məlumatlarınızın qorunmasına əhəmiyyət veririk. <br />
+                            Biz məlumatlarınızın qorunmasına əhəmiyyət veririk. <br />
                             <a href="#" className="font-medium tracking-wider text-white underline">
-                            Məxfilik Siyasətimizi oxuyun.
+                                Məxfilik Siyasətimizi oxuyun.
                             </a>
                         </p>
                     </div>
