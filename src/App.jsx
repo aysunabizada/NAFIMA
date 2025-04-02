@@ -5,6 +5,7 @@ import ErrorPage from "./component/error/ErrorPage";
 import FAQ from "./component/main/FAQ";
 import { useEffect } from "react";
 import About from "./component/main/About";
+import Donate from "./component/main/Donate";
 
 function App() {
     const { pathname } = useLocation();
@@ -20,7 +21,8 @@ function App() {
                 <Route path="/" element={<Layout />} >
                     <Route path="/" element={<Main />} />
                     <Route path="/FAQ" element={<FAQ />} />
-                    <Route path="/About" element={<About />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/donate" element={<Donate />} />
                 </Route>
                 <Route path='*' element={<ErrorPage />} />
             </Routes>

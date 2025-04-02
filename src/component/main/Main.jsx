@@ -11,20 +11,6 @@ function Main() {
 
     return (
         <>
-            {/* <div className="fixed inset-x-0 bottom-0 z-[99]">
-                <div className="bg-[#B6BBC4]">
-                    <div className="mx-auto font-bold sm:flex-row flex-col sm:text-lg flex justify-center gap-[5vw] max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
-                        <Link to='tel:+99450XXXXXXX' className='flex gap-3 items-center text-[#31304D] hover:text-[#81689D] transition-all duration-300'>
-                            <BiPhoneCall className='text-xl bg-[#6e5888] p-3 text-white w-14 h-14 rounded-full' />
-                            Call us: +994 XX XXX XX XX
-                        </Link>
-                        <Link to='https://wa.me/+99450XXXXXXX' className='flex gap-3 items-center text-[#31304D] hover:text-[#81689D] transition-all duration-300'>
-                            <TfiCommentAlt className='text-xl bg-[#6e5888] p-3 text-white w-14 h-14 rounded-full' />
-                            Text us on WhatsApp: +994 XX XXX XX XX
-                        </Link>
-                    </div>
-                </div>
-            </div> */}
             <main className="bg-[#31304D] text-white">
                 <div className="relative min-h-[85vh]">
                     <div className="absolute inset-0">
