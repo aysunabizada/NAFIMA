@@ -19,7 +19,7 @@ function Header() {
                 {/* Desktop Menyu */}
                 <div className="hidden lg:flex text-nowrap items-center gap-[4vw] font-semibold">
                     <Link to={""} className="transition-all relative duration-300 popover-open">Identify Abuse
-                        <div className="popover text-nowrap bg-[#DBDFEA] p-5 rounded-md">
+                        <div className="popover text-nowrap bg-[#DBDFEA] p-5 z-10 rounded-md">
                             <span className="polygon"></span>
                             <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Understand relationship</p></Link>
                             <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Power and control</p></Link>
@@ -49,7 +49,7 @@ function Header() {
                     <Link to={""} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Dəstək Ol</Link>
                     <Link to={""} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Bizimlə Əlaqə</Link>
                     <Link to={"/FAQ"} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>FAQ</Link>
-                    <Link to={'/donate'} className="bg-[#81689D] hover:bg-[#543e6c] text-white transition-all duration-300 active:scale-90 p-3 w-full text-center rounded-md animate-pulse">
+                    <Link to={'/donate'} className="bg-[#81689D] hover:bg-[#543e6c] text-white transition-all duration-300 active:scale-90 p-3 w-full text-center rounded-md animate-pulse" onClick={() => setOpen(false)}>
                         Donate
                     </Link>
                 </div>

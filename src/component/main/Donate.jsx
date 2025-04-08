@@ -4,7 +4,7 @@ function Donate() {
     return (
         <main className="bg-[#F5F5F5]">
             <div className="relative">
-                <div className="lg:absolute lg:inset-0">
+                <div className="lg:absolute lg:inset-0 pointer-events-none">
                     <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                         <DotLottieReact
                             src="https://lottie.host/f8803738-dcf3-47a3-8984-0002e8cd5575/kO81QeoQyR.lottie"
@@ -21,7 +21,7 @@ function Donate() {
                                 <i className='block font-semibold'>Hər ianə bir ümid hədiyyəsidir.</i> Sizin bağışlarınız sayəsində daha çox insana kömək edə,
                                 onların səsini eşidə və həyatlarını yaxşılaşdıra bilərik!
                             </p>
-                            <form method="POST" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                            <form className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                                 <button className='rounded-full w-full cursor-pointer active:scale-95 transition-all duration-300 hover:bg-transparent hover:text-[#81689D] bg-[#81689D] text-white border-2 border-[#81689D]  font-semibold tracking-wider p-3.5 text-lg'>Birdəfəlik</button>
                                 <button className='rounded-full w-full cursor-pointer active:scale-95 transition-all duration-300 hover:bg-[#474F7A] text-[#474F7A] border-[#474F7A] border-2 hover:text-white font-semibold tracking-wider p-3.5 text-lg'>Aylıq</button>
                                 <div className="sm:col-span-2">
@@ -29,7 +29,7 @@ function Donate() {
                                         <label htmlFor="text" className="block text-sm font-medium text-gray-700">
                                             Adı, Soyadı
                                         </label>
-                                        <span id="phone-description" className="text-sm text-gray-500">
+                                        <span className="text-sm text-gray-500">
                                             Optional
                                         </span>
                                     </div>
