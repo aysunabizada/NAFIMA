@@ -1,6 +1,11 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { useEffect } from 'react';
 
 function Donate() {
+    useEffect(() => {
+                document.title = "İanə edin - NAFİMA"
+    },[])
+
     return (
         <main className="bg-[#F5F5F5]">
             <div className="relative">

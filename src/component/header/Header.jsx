@@ -29,8 +29,8 @@ function Header() {
                     </Link>
                     <Link to={"/about"} className="hover:text-[#81689D] transition-all duration-300">Biz Kimik?</Link>
                     <Link to={""} className="hover:text-[#81689D] transition-all duration-300">Dəstək Ol</Link>
-                    <Link to={""} className="hover:text-[#81689D] transition-all duration-300">Bizimlə Əlaqə</Link>
-                    <Link to={"/FAQ"} className="hover:text-[#81689D] transition-all duration-300">FAQ</Link>
+                    <Link to={"/FAQ"} className="hover:text-[#81689D] transition-all duration-300">FAQs</Link>
+                    <Link to={"/privacy-policy"} className="hover:text-[#81689D] transition-all duration-300">Gizlilik Siyasəti</Link>
                     <Link to={'/donate'} className="bg-[#a93d92] hover:bg-[#543e6c] text-white transition-all duration-300 active:scale-90 p-2.5 w-32 text-center rounded-md animate-pulse">
                         Donate
                     </Link>
@@ -47,8 +47,8 @@ function Header() {
                     <Link to={""} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Identify Abuse</Link>
                     <Link to={"/about"} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Biz Kimik?</Link>
                     <Link to={""} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Dəstək Ol</Link>
-                    <Link to={""} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Bizimlə Əlaqə</Link>
-                    <Link to={"/FAQ"} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>FAQ</Link>
+                    <Link to={"/FAQ"} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>FAQs</Link>
+                    <Link to={"/privacy-policy"} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Gizlilik Siyasəti</Link>
                     <Link to={'/donate'} className="bg-[#81689D] hover:bg-[#543e6c] text-white transition-all duration-300 active:scale-90 p-3 w-full text-center rounded-md animate-pulse" onClick={() => setOpen(false)}>
                         Donate
                     </Link>

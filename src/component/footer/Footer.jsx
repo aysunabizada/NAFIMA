@@ -1,12 +1,12 @@
-import { Link } from "react-router"
+import { Link } from "react-router";
 
 const navigation = {
     main: [
         { name: 'Identify Abuse', href: '#' },
         { name: 'Biz kimik?', href: '/about' },
         { name: 'Dəstək ol', href: '#' },
-        { name: 'Bizimlə əlaqə', href: '#' },
-        { name: 'FAQ', href: '/FAQ' },
+        { name: 'FAQs', href: '/FAQ' },
+        { name: 'Gizlilik Siyasəti', href: '/privacy-policy' },
         { name: 'Donate', href: '/donate' },
     ],
     social: [
@@ -63,8 +63,8 @@ const navigation = {
 
 function Footer() {
     return (
-        <footer className="bg-[#161A30] py-5 text-white">
-            <div className="mx-auto max-w-7xl overflow-hidden py-14 px-6 lg:px-8">
+        <footer className="bg-[#161A30] py-4 text-white">
+            <div className="mx-auto max-w-7xl overflow-hidden py-12 px-6 lg:px-8">
                 <nav className="-mb-6 columns-2 sm:flex sm:justify-center text-center sm:space-x-12" aria-label="Footer">
                     {navigation.main.map((item) => (
                         <div key={item.name} className="pb-6">

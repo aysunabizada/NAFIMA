@@ -6,6 +6,7 @@ import FAQ from "./component/main/FAQ";
 import { useEffect } from "react";
 import About from "./component/main/About";
 import Donate from "./component/main/Donate";
+import PrivacyPolicy from "./component/main/PrivacyPolicy";
 
 function App() {
     const { pathname } = useLocation();
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/" element={<Main />} />
                     <Route path="/FAQ" element={<FAQ />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                     <Route path="/donate" element={<Donate />} />
                 </Route>
                 <Route path='*' element={<ErrorPage />} />
