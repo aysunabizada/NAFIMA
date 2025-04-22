@@ -2,13 +2,10 @@ import { ChatBubbleLeftRightIcon, FaceSmileIcon, PhoneIcon } from '@heroicons/re
 import { Link } from 'react-router';
 import bg from '../../assets/img/GettyImages_1200658642.webp';
 import { PiShootingStar } from "react-icons/pi";
-import { BiPhoneCall } from "react-icons/bi";
-import { TfiCommentAlt } from "react-icons/tfi";
 import Slider from './Slider';
 import InNumbers from './InNumbers';
 
 function Main() {
-
     return (
         <>
             <main className="bg-[#31304D] text-white">

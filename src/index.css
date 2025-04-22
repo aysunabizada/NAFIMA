@@ -57,3 +57,6 @@
     border-radius: 5px !important;
     transition: .8s;
 }
+.quick-call-tip:hover .icon{
+    background: #a93d92;
+}
