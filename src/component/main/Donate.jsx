@@ -23,7 +23,7 @@ function Donate() {
                         <div className="mx-auto max-w-md sm:max-w-lg lg:mx-0">
                             <h2 className="text-3xl font-bold tracking-wide sm:text-5xl"><span className='text-[#81689D]'>Dəstəyinizlə</span> Həyatları Dəyişdirin! 💜</h2>
                             <p className="text-md text-gray-700 mt-5">
-                                <i className='block font-semibold'>Hər ianə bir ümid hədiyyəsidir.</i> Sizin bağışlarınız sayəsində daha çox insana kömək edə,
+                                <i className='block font-semibold'>Hər ianə bir ümid hədiyyəsidir.</i> Sizin ianələriniz ilə daha çox insana kömək edə,
                                 onların səsini eşidə və həyatlarını yaxşılaşdıra bilərik!
                             </p>
                             <form className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
