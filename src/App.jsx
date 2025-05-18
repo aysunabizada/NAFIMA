@@ -10,10 +10,16 @@ import PrivacyPolicy from "./component/main/PrivacyPolicy";
 import { HiChevronDoubleUp } from 'react-icons/hi2';
 import { ChatBubbleLeftRightIcon, FaceSmileIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import WhatIsAbuse from "./component/main/WhatIsAbuse";
+import Statistics from "./component/main/Statistics";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function App() {
     const { pathname } = useLocation();
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     useEffect(() => {
         window.scroll(0, 0);
@@ -97,7 +103,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Layout />} >
                     <Route path="/" element={<Main />} />
-                    <Route path="/whatIsAbuse" element={<WhatIsAbuse/>} />
+                    <Route path="/whatIsAbuse" element={<WhatIsAbuse />} />
+                    <Route path="/statistics" element={<Statistics />} />
                     <Route path="/FAQ" element={<FAQ />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />

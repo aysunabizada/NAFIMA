@@ -18,16 +18,12 @@ function PrivacyPolicy() {
         <main className="bg-[#31304D] text-white">
             <div className="container">
                 <div className="p-6 py-12 mx-auto space-y-24 lg:px-8">
-                    {/* <div aria-hidden="true" className="mt-10 lg:mt-0">
-                        <img src="https://images.squarespace-cdn.com/content/v1/5d77da854043821e3176eb61/abadc5de-ee7c-4061-b063-8f4b412c6664/DV+in+the+black+community.png" alt="" className="mx-auto rounded-lg" />
-                        <img src="https://www.epaumc.org/wp-content/uploads/marginalizedpassover-1024x577.png" alt="" className="mx-auto rounded-lg" />
-                    </div> */}
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="1500">
                         <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-[#fff]">Gizlilik Siyasəti</h2>
                         <p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-400">Bizimlə yolunu paylaş</p>
                     </div>
                     <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-                        <div>
+                        <div data-aos="fade-right" data-aos-duration="1500">
                             <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-200">NAFİMA Rəqəmsal Xidmətləri</h3>
                             <p className="mt-3 text-lg dark:text-gray-300">NAFİMA olaraq biz, ailə zorakılığı və gender əsaslı problemlərlə mübarizə aparan hər kəsə təhlükəsiz və məxfi dəstək göstərmək üçün buradayıq. Rəqəmsal xidmətlərimiz vasitəsilə bizə müraciət edən şəxslərin gizliliyi və təhlükəsizliyi bizim üçün ön plandadır.</p>
                             <div className="mt-12 space-y-12">
@@ -51,13 +47,13 @@ function PrivacyPolicy() {
                                 </div>
                             </div>
                         </div>
-                        <div aria-hidden="true" className="mt-10 lg:mt-0">
+                        <div data-aos="fade-left" data-aos-duration="1500" aria-hidden="true" className="mt-10 lg:mt-0">
                             <img src="https://www.sassmm.org/uploads/1/1/7/6/117604982/december-sm_orig.png" alt="" className="rounded-lg w-[100%] brightness-50" />
                         </div>
                     </div>
                     <div>
                         <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-                            <div className="lg:col-start-2">
+                            <div data-aos="fade-left" data-aos-duration="1500" className="lg:col-start-2">
                                 <h3 className="text-lg font-bold tracking-tight dark:text-gray-200">🚫 İmtina (Opt-Out) Siyasəti</h3>
                                 <div className="mt-3 dark:text-gray-300">NAFİMA, istifadəçilərə lazım olduqda və mümkün olduğu hallarda rəqəmsal xidmətlərdən imtina etmək imkanı təqdim edir. Bu seçimlərə aşağıdakılar daxildir:
                                     <ul className='list-disc ml-8 mt-3'>
@@ -102,20 +98,15 @@ function PrivacyPolicy() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
+                            <div data-aos="fade-right" data-aos-duration="1500" className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
                                 <img src="https://uniswales.ac.uk/sites/default/files/styles/large/public/2023-11/women-g58d42354c_1920.jpg?h=a71d9e32&itok=F6GcmJiI" alt="" className="brightness-50 rounded-lg" />
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* <div className="relative flex justify-center h-[300px] w-[160px] border-4 border-black rounded-2xl bg-gray-50">
-                    <span className="border border-black bg-black w-20 h-2 rounded-br-xl rounded-bl-xl"></span>
-                    <span className="absolute -right-2 top-14 border-4 border-black h-7 rounded-md"></span>
-                    <span className="absolute -right-2 bottom-36 border-4 border-black h-10 rounded-md"></span>
-                </div> */}
             </div>
             <div className="bg-[#F5F5F5]">
-                <div className="mx-auto max-w-7xl px-12 xl:px-0 flex flex-col lg:flex-row gap-8 py-24">
+                <div data-aos="zoom-in" data-aos-duration="1500" className="mx-auto max-w-7xl px-12 xl:px-0 flex flex-col lg:flex-row gap-8 py-24">
                     <div>
                         <h2 className="text-3xl font-bold tracking-tight text-[#474F7A]">Bizimlə əlaqə saxlayın</h2>
                         <p className="mt-6 max-w-3xl text-lg text-gray-500">
@@ -152,7 +143,7 @@ function PrivacyPolicy() {
                 </div>
             </div>
             <div className="overflow-hidden bg-[#F0ECE5] py-16 px-6 lg:px-8 lg:py-24">
-                <div className="relative mx-auto max-w-xl">
+                <div data-aos="zoom-in" data-aos-duration="1500" className="relative mx-auto max-w-xl">
                     <svg
                         className="absolute left-full translate-x-1/2 transform"
                         width={404}

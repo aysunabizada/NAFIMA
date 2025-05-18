@@ -35,7 +35,7 @@ function About() {
         <main className="bg-[#31304D] text-white">
             <section className="relative py-4">
                 <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24">
-                    <div className="relative sm:py-16 lg:py-0">
+                    <div data-aos="fade-right" data-aos-duration="2000" className="relative sm:py-16 lg:py-0">
                         <div className="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:px-0 lg:py-20">
                             <div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
                                 <img
@@ -69,7 +69,7 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:px-0">
+                    <div data-aos="fade-left" data-aos-duration="2000" className="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:px-0">
                         <div className="pt-12 sm:pt-16 lg:pt-20">
                             <h2 className="text-3xl font-bold tracking-wide text-white sm:text-4xl">
                                 Səssizləri eşit, ədaləti yaşat!
@@ -93,7 +93,7 @@ function About() {
             </section>
             <section className="bg-white/95 py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="mx-auto max-w-2xl lg:text-center">
+                    <div data-aos="fade-down" data-aos-duration="1500" className="mx-auto max-w-2xl lg:text-center">
                         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                             Xidmətlərimiz
                         </p>
@@ -102,7 +102,7 @@ function About() {
                             Bizim xidmətlərimiz yalnız məlumat verməkdən ibarət deyil – biz sizə çıxış yolu göstərir, psixoloji və hüquqi istiqamətdə yol yoldaşı oluruq.
                         </p>
                     </div>
-                    <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
+                    <div data-aos="zoom-in" data-aos-duration="1500" className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
                         <dl className="grid max-w-xl grid-cols-1 gap-y-14 gap-x-14 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                             {features.map((feature) => (
                                 <div key={feature.name} className="relative pl-[5rem]">
@@ -119,7 +119,7 @@ function About() {
                     </div>
                 </div>
             </section>
-            <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
+            <div data-aos="zoom-in" data-aos-duration="1500" className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
                 <div className="text-center">
                     <p className="mt-1 text-4xl font-bold tracking-wider text-[#9290C3] sm:text-5xl lg:text-6xl">
                         Niyə NAFİMA?
@@ -131,10 +131,10 @@ function About() {
             </div>
             <div className="bg-white/95 text-gray-900 py-16 px-6 sm:py-24 lg:px-8">
                 <div className="text-center">
-                    <p className="mt-1 text-2xl sm:text-4xl font-bold tracking-wider">
+                    <p data-aos="zoom-in" data-aos-duration="1500" className="mt-1 text-2xl sm:text-4xl font-bold tracking-wider">
                         Əməkdaşlarımız
                     </p>
-                    <p className="mx-auto mt-5 mb-16 text-md max-w-3xl">
+                    <p data-aos="zoom-in" data-aos-duration="1500" className="mx-auto mt-5 mb-16 text-md max-w-3xl">
                         Biz müxtəlif hüquq müdafiə təşkilatları, sosial xidmət qurumları və QHT-lərlə əməkdaşlıq edərək, sizə ən doğru və sürətli dəstəyi göstərməyə çalışırıq.
                     </p>
                     <EmployeeSlider />

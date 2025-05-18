@@ -7,13 +7,13 @@ function WhatIsAbuse() {
             <div className="py-[3rem] gradient1">
                 <div className="container text-white md:text-start text-center">
                     <Link className="hover:underline" to={'/'}>Ana səhifə </Link>{' > '}
-                    <Link className="hover:underline" to={'/whatIsAbuse'}> Zorakılıq nədir?</Link>
+                    <span className="hover:underline cursor-pointer"> Zorakılıq nədir?</span>
                 </div>
             </div>
             <div className="container">
-                <h1 className="text-6xl pb-8 text-center md:text-start"><b className="text-[#a93d92]">Ailə Zorakılığı</b> nədir?</h1>
+                <h1 data-aos="fade-right" data-aos-duration="1000" className="text-6xl pb-8 text-center md:text-start"><b className="text-[#a93d92]">Ailə Zorakılığı</b> nədir?</h1>
                 <div className="flex justify-between flex-col-reverse md:flex-row">
-                    <div>
+                    <div data-aos="fade-right" data-aos-duration="2000">
                         <p className="leading-8 pb-5"><b>Ailə zorakılığı</b> — bu, sadəcə fiziki ağrı deyil. Bu, bir insanın başqa bir insan üzərində güc nümayiş etdirməsi, onu qorxutması, idarə etməyə çalışması, səssizliyə məcbur etməsidir. Bəzən sözlə, bəzən baxışla, bəzən isə sadəcə susmaqla belə törədilir...
                             Ən ağrılısı odur ki, bu zorakılıq çox zaman evdə, insanın ən güvəndiyi yerdə baş verir. <br /> Zorakılığı yaşayanların əksəriyyəti qadınlardır – və çox vaxt onların hekayələri eşidilmir...
                             <br /> NAFİMA olaraq biz inanırıq ki, hər kəsin səsi eşidilməlidir. Biz susmuruq. Biz işıq tuturuq. Biz dəyişirik.</p>
@@ -27,11 +27,11 @@ function WhatIsAbuse() {
                             <li className="my-4"><b className="text-[#81689D] text-lg italic">Onlayn və ya rəqəmsal zorakılıq</b> – mesajlar, sosial media, e-poçt və digər onlayn vasitələrlə təqib, təhdid və nəzarət</li>
                         </ul>
                     </div>
-                    <img src={img1} alt="img" className="md:w-[300px] w-[200px] m-auto mb-5 object-contain" />
+                    <img data-aos="fade-left" data-aos-duration="2000" src={img1} alt="img" className="md:w-[300px] w-[200px] m-auto mb-5 object-contain" />
                 </div>
             </div>
             <div className="gradient2 text- font-bold py-[5rem] text-xl tracking-wider">
-                <p className="container text-center underline">Unutma: Hər bir insan, fərq etməz kimdir, sevgi, hörmət və anlayış üzərində qurulmuş münasibətə layiqdir!</p>
+                <p data-aos="fade-down" data-aos-duration='1500' className="container text-center underline">Unutma: Hər bir insan, fərq etməz kimdir, sevgi, hörmət və anlayış üzərində qurulmuş münasibətə layiqdir!</p>
             </div>
         </main>
     )

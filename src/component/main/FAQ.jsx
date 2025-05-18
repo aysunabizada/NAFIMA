@@ -45,7 +45,7 @@ function FAQ() {
             <div className="py-20 sm:py-32 lg:py-20 lg:px-0">
                 <div className="container divide-y divide-gray-600">
                     <h2 className="text-3xl pb-2 font-bold leading-10 tracking-tight">Tez-tez verilən suallar</h2>
-                    <dl className="mt-10 space-y-6 divide-y divide-gray-600">
+                    <dl data-aos="fade-down" data-aos-duration="1500" className="mt-10 space-y-6 divide-y divide-gray-600">
                         {faqs.map((faq) => (
                             <Disclosure as="div" key={faq.question} className="">
                                 {({ open }) => (

@@ -18,7 +18,7 @@ function Main() {
                         />
                         <div className="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true" />
                     </div>
-                    <div className="relative container py-16 sm:py-24">
+                    <div data-aos="fade-down" data-aos-duration="1500" className="relative container py-16 sm:py-24">
                         <h1 className="text-4xl font-bold tracking-widest text-white md:text-5xl lg:text-6xl">NAFİMA</h1>
                         <span className='text-lg italic tracking-wider text-[#81689D]'>Səssizləri eşit, ədaləti yaşat!</span>
                         <p className="mt-6 sm:h-[3vh] h-[80vh] max-w-7xl text-lg text-gray-300">
@@ -32,7 +32,7 @@ function Main() {
 
                 {/* Overlapping cards */}
                 <section className="relative z-10 mx-auto -mt-32 max-w-[85rem] px-6 pb-32 lg:px-8" aria-labelledby="contact-heading">
-                    <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
+                    <div data-aos="zoom-in" data-aos-duration="1500" className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
                         <Link to='tel:+99450XXXXXXX' className="box flex hover:scale-105 transition-all duration-500 flex-col rounded-2xl bg-white shadow-xl">
                             <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
                                 <div className="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-[#81689D] p-5 shadow-lg icon">
@@ -63,7 +63,7 @@ function Main() {
                     </div>
                 </section>
                 <section className='container'>
-                    <div className='py-8 font-bold md:text-center'>
+                    <div data-aos="flip-up" data-aos-duration="1500" className='py-8 font-bold md:text-center'>
                         <h2 className='md:text-4xl text-3xl'>Hər kəs düzgün davranışa layiqdir!</h2>
                         <p className='flex gap-3 text-sm md:justify-center text-[#9290C3] italic py-4 items-center'><PiShootingStar className='text-5xl text-[#a93d92]' /> Özünü hazır hiss etdiyin an bizə yaza bilərsən.</p>
                     </div>

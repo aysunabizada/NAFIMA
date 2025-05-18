@@ -9,7 +9,7 @@ function Donate() {
     return (
         <main className="bg-[#F5F5F5]">
             <div className="relative">
-                <div className="lg:absolute lg:inset-0 pointer-events-none">
+                <div data-aos="fade-left" data-aos-duration="1500" className="lg:absolute lg:inset-0 pointer-events-none">
                     <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                         <DotLottieReact
                             src="https://lottie.host/f8803738-dcf3-47a3-8984-0002e8cd5575/kO81QeoQyR.lottie"
@@ -18,7 +18,7 @@ function Donate() {
                         />
                     </div>
                 </div>
-                <div className="py-16 px-3 sm:py-20 lg:mx-auto lg:grid container lg:grid-cols-2 lg:py-20">
+                <div data-aos="fade-right" data-aos-duration="1500" className="py-16 px-3 sm:py-20 lg:mx-auto lg:grid container lg:grid-cols-2 lg:py-20">
                     <div className="lg:pr-8">
                         <div className="mx-auto max-w-md sm:max-w-lg lg:mx-0">
                             <h2 className="text-3xl font-bold tracking-wide sm:text-5xl"><span className='text-[#81689D]'>Dəstəyinizlə</span> Həyatları Dəyişdirin! 💜</h2>

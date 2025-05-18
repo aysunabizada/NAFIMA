@@ -12,7 +12,7 @@ function InNumbers() {
         <>
             {/* NAFIMA in numbers*/}
             <div className="mx-auto max-w-7xl py-12 px-6 sm:py-16 lg:px-8 lg:py-20">
-                <div className="mx-auto pb-5 max-w-4xl text-center">
+                <div data-aos="fade-right" data-aos-duration="1500" className="mx-auto pb-5 max-w-4xl text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                         NAFİMA - Dəstəyimiz Rəqəmlərlə
                     </h2>
@@ -20,7 +20,7 @@ function InNumbers() {
                         Zorakılıqla mübarizədə güc birlikdədir!
                     </p>
                 </div>
-                <dl className="mt-10 text-center sm:mx-auto sm:grid sm:max-w-3xl sm:grid-cols-3 sm:gap-12">
+                <dl data-aos="fade-left" data-aos-duration="1500" className="mt-10 text-center sm:mx-auto sm:grid sm:max-w-3xl sm:grid-cols-3 sm:gap-12">
                     <div className="flex flex-col">
                         <dt className="order-2 mt-2 text-xs leading-6 text-indigo-200">Fərqli bölgələrdə <br /> xidmətlər</dt>
                         <dd className="order-1 text-6xl font-bold tracking-tight text-white">

@@ -22,7 +22,7 @@ function Header() {
                         <div className="popover text-nowrap bg-[#DBDFEA] p-5 z-10 rounded-md">
                             <span className="polygon"></span>
                             <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">İnsanlar niyə zorakılıq edirlər?</p></Link>
-                            <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Zorakılıq nə qədər yayğındır?</p></Link>
+                            <Link to={'/statistics'}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Zorakılıq nə qədər yayğındır?</p></Link>
                             <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Zorakılığının tanınması</p></Link>
                             <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2"> Zorakılığın xəbərdaredici əlamətləri</p></Link>
                         </div>
@@ -44,7 +44,7 @@ function Header() {
             <div className={`fixed top-0 right-0 z-[999] w-3/4 max-w-sm h-full bg-white shadow-lg transition-transform transform ${open ? "translate-x-0" : "translate-x-full"}`}>
                 <div className="p-6 flex flex-col gap-4 font-medium text-lg">
                     <button onClick={() => setOpen(false)} className="cursor-pointer text-[#543e6c] self-end text-5xl pb-10">&times;</button>
-                    <Link to={""} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Identify Abuse</Link>
+                    <Link to={"whatIsAbuse"} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Zorakılıq nədir?</Link>
                     <Link to={"/about"} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Biz Kimik?</Link>
                     {/* <Link to={""} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Dəstək Ol</Link> */}
                     <Link to={"/FAQ"} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>FAQs</Link>
