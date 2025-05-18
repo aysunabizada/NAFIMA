@@ -60,3 +60,11 @@
 .quick-call-tip:hover .icon{
     background: #a93d92;
 }
+.gradient1{
+    background: #81689D;
+    background: linear-gradient(180deg, rgba(129, 104, 157, 1) 0%, rgba(245, 239, 231, 1) 100%);
+}
+.gradient2{
+    background: #81689D;
+    background: linear-gradient(0deg, rgba(129, 104, 157, 1) 0%, rgba(245, 239, 231, 1) 100%);
+}

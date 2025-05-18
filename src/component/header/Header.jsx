@@ -18,17 +18,17 @@ function Header() {
 
                 {/* Desktop Menyu */}
                 <div className="hidden lg:flex text-nowrap items-center gap-[4vw] font-semibold">
-                    <Link to={""} className="transition-all relative duration-300 popover-open">Identify Abuse
+                    <Link to={"/whatIsAbuse"} className="transition-all relative duration-300 popover-open">Zorakılıq nədir?
                         <div className="popover text-nowrap bg-[#DBDFEA] p-5 z-10 rounded-md">
                             <span className="polygon"></span>
-                            <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Understand relationship</p></Link>
-                            <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Power and control</p></Link>
-                            <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Why people abuse</p></Link>
-                            <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Cultural context</p></Link>
+                            <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">İnsanlar niyə zorakılıq edirlər?</p></Link>
+                            <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Zorakılıq nə qədər yayğındır?</p></Link>
+                            <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Zorakılığının tanınması</p></Link>
+                            <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2"> Zorakılığın xəbərdaredici əlamətləri</p></Link>
                         </div>
                     </Link>
                     <Link to={"/about"} className="hover:text-[#81689D] transition-all duration-300">Biz Kimik?</Link>
-                    <Link to={""} className="hover:text-[#81689D] transition-all duration-300">Dəstək Ol</Link>
+                    {/* <Link to={""} className="hover:text-[#81689D] transition-all duration-300">Dəstək Ol</Link> */}
                     <Link to={"/FAQ"} className="hover:text-[#81689D] transition-all duration-300">FAQs</Link>
                     <Link to={"/privacy-policy"} className="hover:text-[#81689D] transition-all duration-300">Gizlilik Siyasəti</Link>
                     <Link to={'/donate'} className="bg-[#a93d92] hover:bg-[#543e6c] text-white transition-all duration-300 active:scale-90 p-2.5 w-32 text-center rounded-md animate-pulse">
@@ -46,7 +46,7 @@ function Header() {
                     <button onClick={() => setOpen(false)} className="cursor-pointer text-[#543e6c] self-end text-5xl pb-10">&times;</button>
                     <Link to={""} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Identify Abuse</Link>
                     <Link to={"/about"} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Biz Kimik?</Link>
-                    <Link to={""} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Dəstək Ol</Link>
+                    {/* <Link to={""} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Dəstək Ol</Link> */}
                     <Link to={"/FAQ"} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>FAQs</Link>
                     <Link to={"/privacy-policy"} className="hover:text-[#81689D] transition-all duration-300" onClick={() => setOpen(false)}>Gizlilik Siyasəti</Link>
                     <Link to={'/donate'} className="bg-[#81689D] hover:bg-[#543e6c] text-white transition-all duration-300 active:scale-90 p-3 w-full text-center rounded-md animate-pulse" onClick={() => setOpen(false)}>

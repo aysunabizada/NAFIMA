@@ -9,6 +9,7 @@ import Donate from "./component/main/Donate";
 import PrivacyPolicy from "./component/main/PrivacyPolicy";
 import { HiChevronDoubleUp } from 'react-icons/hi2';
 import { ChatBubbleLeftRightIcon, FaceSmileIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import WhatIsAbuse from "./component/main/WhatIsAbuse";
 
 
 function App() {
@@ -96,6 +97,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Layout />} >
                     <Route path="/" element={<Main />} />
+                    <Route path="/whatIsAbuse" element={<WhatIsAbuse/>} />
                     <Route path="/FAQ" element={<FAQ />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
