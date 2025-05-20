@@ -47,7 +47,7 @@ function PrivacyPolicy() {
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="fade-zoom-in" data-aos-duration="1500" aria-hidden="true" className="mt-10 lg:mt-0">
+                        <div aria-hidden="true" className="mt-10 lg:mt-0">
                             <img src="https://www.sassmm.org/uploads/1/1/7/6/117604982/december-sm_orig.png" alt="" className="rounded-lg w-[100%] brightness-50" />
                         </div>
                     </div>

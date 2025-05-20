@@ -1,10 +1,31 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function Donate() {
+    const [selected, setSelected] = useState('onetime');
+    const [amount, setAmount] = useState('');
+
     useEffect(() => {
-                document.title = "İanə edin - NAFİMA"
-    },[])
+        document.title = "İanə edin - NAFİMA"
+    }, [])
+
+    function handleSubmit(e) {
+        e.preventDefault();
+    }
+
+    function handleButtonClick(value){
+        const numericValue = parseFloat(value);
+        const currentAmount = parseFloat(amount) || 0;
+        const newAmount = currentAmount + numericValue;
+        setAmount(newAmount.toString());
+    };
+
+    function handleInputChange(e){
+        const val = e.target.value;
+        if (/^\d*\.?\d*$/.test(val)) {
+            setAmount(val);
+        }
+    };
 
     return (
         <main className="bg-[#F5F5F5]">
@@ -26,9 +47,23 @@ function Donate() {
                                 <i className='block font-semibold'>Hər ianə bir ümid hədiyyəsidir.</i> Sizin ianələriniz ilə daha çox insana kömək edə,
                                 onların səsini eşidə və həyatlarını yaxşılaşdıra bilərik!
                             </p>
-                            <form className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-                                <button className='rounded-full w-full cursor-pointer active:scale-95 transition-all duration-300 hover:bg-transparent hover:text-[#81689D] bg-[#81689D] text-white border-2 border-[#81689D]  font-semibold tracking-wider p-3.5 text-lg'>Birdəfəlik</button>
-                                <button className='rounded-full w-full cursor-pointer active:scale-95 transition-all duration-300 hover:bg-[#474F7A] text-[#474F7A] border-[#474F7A] border-2 hover:text-white font-semibold tracking-wider p-3.5 text-lg'>Aylıq</button>
+                            <form action={''} onSubmit={handleSubmit} className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                                <button
+                                    onClick={() => setSelected('onetime')}
+                                    className={`rounded-full w-full cursor-pointer transition-all duration-300 font-semibold tracking-wider p-3.5 text-lg border-2 
+                                        ${selected === 'onetime'
+                                            ? 'bg-[#474F7A] text-white border-[#474F7A]'
+                                            : 'bg-white text-[#474F7A] border-[#474F7A] hover:bg-[#474F7A] hover:text-white active:scale-95'} `} >
+                                    Birdəfəlik
+                                </button>
+                                <button
+                                    onClick={() => setSelected('monthly')}
+                                    className={`rounded-full w-full cursor-pointer transition-all duration-300 font-semibold tracking-wider p-3.5 text-lg border-2 
+                                        ${selected === 'monthly'
+                                            ? 'bg-[#474F7A] text-white border-[#474F7A]'
+                                            : 'bg-white text-[#474F7A] border-[#474F7A] hover:bg-[#474F7A] hover:text-white active:scale-95'}`}>
+                                    Aylıq
+                                </button>
                                 <div className="sm:col-span-2">
                                     <div className="flex justify-between">
                                         <label htmlFor="text" className="block text-sm font-medium text-gray-700">
@@ -103,17 +138,28 @@ function Donate() {
                                 <fieldset className="sm:col-span-2">
                                     <legend className="block text-sm font-medium text-gray-700">Zəhmət olmasa, ianə məbləğinizi yazın. <span className='text-[red]'>*</span></legend>
                                     <input
-                                            type="number"
-                                            name="donate"
-                                            id="donate"
-                                            className="block w-full p-3 mt-2 shadow-gray-500 shadow-xs rounded-md border-gray-300 sm:text-sm"
-                                        />
+                                        onChange={handleInputChange}
+                                        value={amount}
+                                        type="text"
+                                        name="donate"
+                                        id="donate"
+                                        className="block w-full p-3 mt-2 shadow-gray-500 shadow-xs rounded-md border-gray-300 sm:text-sm"
+                                    />
                                     <div className="mt-4 grid grid-cols-4 gap-x-2">
-                                        <button className='border rounded-md p-2 focus:bg-[#81689D] focus:text-white cursor-pointer hover:bg-gray-200 transition-all duration-300 font-semibold'>10 ₼</button>
-                                        <button className='border rounded-md p-2 focus:bg-[#81689D] focus:text-white cursor-pointer hover:bg-gray-200 transition-all duration-300 font-semibold'>25 ₼</button>
-                                        <button className='border rounded-md p-2 focus:bg-[#81689D] focus:text-white cursor-pointer hover:bg-gray-200 transition-all duration-300 font-semibold'>50 ₼</button>
-                                        <button className='border rounded-md p-2 focus:bg-[#81689D] focus:text-white cursor-pointer hover:bg-gray-200 transition-all duration-300 font-semibold'>100 ₼</button>
+                                        {['10', '25', '50', '100'].map((val) => (
+                                            <button
+                                                key={val}
+                                                onClick={() => handleButtonClick(val)}
+                                                className="border hover:scale-95 rounded-md p-2 cursor-pointer bg-gray-200 transition-all duration-300 font-semibold"
+                                            >
+                                                {val} ₼
+                                            </button>
+                                        ))}
                                     </div>
+                                    {/* <button className='border hover:scale-95 rounded-md p-2 cursor-pointer bg-gray-200 transition-all duration-300 font-semibold'>10 ₼</button>
+                                        <button className='border hover:scale-95 rounded-md p-2 cursor-pointer bg-gray-200 transition-all duration-300 font-semibold'>25 ₼</button>
+                                        <button className='border hover:scale-95 rounded-md p-2 cursor-pointer bg-gray-200 transition-all duration-300 font-semibold'>50 ₼</button>
+                                        <button className='border hover:scale-95 rounded-md p-2 cursor-pointer bg-gray-200 transition-all duration-300 font-semibold'>100 ₼</button> */}
                                 </fieldset>
                                 <div className="relative flex items-start border-y w-full border-gray-300 py-4">
                                     <div className="flex h-5 items-center">

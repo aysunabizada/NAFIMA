@@ -4,14 +4,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* body, html{
-    overflow-x: hidden !important;
-} */
-
-/* header {
-    box-shadow: #9f9e9ecf 0px 10px 10px -10px;
-} */
-
 .container {
     width: 85%;
     margin: auto;
@@ -72,4 +64,9 @@
 .gradient2{
     background: #81689D;
     background: linear-gradient(0deg, rgba(129, 104, 157, 1) 0%, rgba(245, 239, 231, 1) 100%);
+}
+
+.font-dancing{
+    font-family: "Dancing Script", cursive;
+    color: rgba(58, 5, 39, 0.847);
 }

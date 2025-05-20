@@ -32,7 +32,7 @@ function Main() {
 
                 {/* Overlapping cards */}
                 <section className="relative z-10 mx-auto -mt-32 max-w-[85rem] px-6 pb-32 lg:px-8" aria-labelledby="contact-heading">
-                    <div data-aos="zoom-in" data-aos-duration="1500" className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
+                    <div data-aos="fade-zoom-in" data-aos-duration="1500" className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
                         <Link to='tel:+99450XXXXXXX' className="box flex hover:scale-105 transition-all duration-500 flex-col rounded-2xl bg-white shadow-xl">
                             <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
                                 <div className="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-[#81689D] p-5 shadow-lg icon">

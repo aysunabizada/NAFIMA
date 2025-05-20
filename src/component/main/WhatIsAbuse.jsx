@@ -6,8 +6,8 @@ function WhatIsAbuse() {
         <main className="bg-[#F5EFE7] min-h-[50vh]">
             <div className="py-[3rem] gradient1">
                 <div className="container text-white md:text-start text-center">
-                    <Link className="hover:underline" to={'/'}>Ana səhifə </Link>{' > '}
-                    <span className="hover:underline cursor-pointer"> Zorakılıq nədir?</span>
+                    {/* <Link className="hover:underline" to={'/'}>Ana səhifə </Link>{' > '}
+                    <span className="hover:underline cursor-pointer"> Zorakılıq nədir?</span> */}
                 </div>
             </div>
             <div className="container">
@@ -30,8 +30,9 @@ function WhatIsAbuse() {
                     <img data-aos="fade-left" data-aos-duration="2000" src={img1} alt="img" className="md:w-[300px] w-[200px] m-auto mb-5 object-contain" />
                 </div>
             </div>
-            <div className="gradient2 text- font-bold py-[5rem] text-xl tracking-wider">
-                <p data-aos="fade-down" data-aos-duration='1500' className="container text-center underline">Unutma: Hər bir insan, fərq etməz kimdir, sevgi, hörmət və anlayış üzərində qurulmuş münasibətə layiqdir!</p>
+            <div className="gradient2 font-bold py-[5rem] tracking-wider">
+                <p data-aos="fade-down" data-aos-duration='1500' className="container text-3xl font-dancing text-center">Unutma: hər bir insan, fərq etməz kimdir, sevgi, hörmət və anlayış üzərində qurulmuş münasibətə layiqdir!</p>
+                <p data-aos="fade-down" data-aos-duration='1500' className="container py-2 text-3xl font-dancing text-center">Zorakılıq sevgi deyil! Səni sevən insan sənə heç vaxt zərər verməz.</p>
             </div>
         </main>
     )
