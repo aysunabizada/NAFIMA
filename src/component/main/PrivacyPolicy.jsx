@@ -18,7 +18,7 @@ function PrivacyPolicy() {
         <main className="bg-[#31304D] text-white">
             <div className="container">
                 <div className="p-6 py-12 mx-auto space-y-24 lg:px-8">
-                    <div data-aos="zoom-in" data-aos-duration="1500">
+                    <div data-aos="fade-zoom-in" data-aos-duration="1500">
                         <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-[#fff]">Gizlilik Siyasəti</h2>
                         <p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-400">Bizimlə yolunu paylaş</p>
                     </div>
@@ -47,13 +47,13 @@ function PrivacyPolicy() {
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="fade-left" data-aos-duration="1500" aria-hidden="true" className="mt-10 lg:mt-0">
+                        <div data-aos="fade-zoom-in" data-aos-duration="1500" aria-hidden="true" className="mt-10 lg:mt-0">
                             <img src="https://www.sassmm.org/uploads/1/1/7/6/117604982/december-sm_orig.png" alt="" className="rounded-lg w-[100%] brightness-50" />
                         </div>
                     </div>
                     <div>
                         <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-                            <div data-aos="fade-left" data-aos-duration="1500" className="lg:col-start-2">
+                            <div data-aos="fade-zoom-in" data-aos-duration="1500" className="lg:col-start-2">
                                 <h3 className="text-lg font-bold tracking-tight dark:text-gray-200">🚫 İmtina (Opt-Out) Siyasəti</h3>
                                 <div className="mt-3 dark:text-gray-300">NAFİMA, istifadəçilərə lazım olduqda və mümkün olduğu hallarda rəqəmsal xidmətlərdən imtina etmək imkanı təqdim edir. Bu seçimlərə aşağıdakılar daxildir:
                                     <ul className='list-disc ml-8 mt-3'>

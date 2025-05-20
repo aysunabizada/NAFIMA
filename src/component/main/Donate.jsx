@@ -9,7 +9,7 @@ function Donate() {
     return (
         <main className="bg-[#F5F5F5]">
             <div className="relative">
-                <div data-aos="fade-left" data-aos-duration="1500" className="lg:absolute lg:inset-0 pointer-events-none">
+                <div data-aos="fade-zoom-in" data-aos-duration="1500" className="lg:absolute lg:inset-0 pointer-events-none">
                     <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                         <DotLottieReact
                             src="https://lottie.host/f8803738-dcf3-47a3-8984-0002e8cd5575/kO81QeoQyR.lottie"

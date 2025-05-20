@@ -4,6 +4,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+/* body, html{
+    overflow-x: hidden !important;
+} */
+
 /* header {
     box-shadow: #9f9e9ecf 0px 10px 10px -10px;
 } */
@@ -12,6 +16,7 @@
     width: 85%;
     margin: auto;
 }
+
 
 .popover{
     position: absolute;

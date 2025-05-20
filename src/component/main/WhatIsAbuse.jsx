@@ -21,7 +21,7 @@ function WhatIsAbuse() {
                         <ul className="list-disc px-10">
                             <li className="my-4"><b className="text-[#81689D] text-lg italic">Məcburedici nəzarət</b> – qorxutma, alçaltma, təcrid və nəzarət etmə kimi ardıcıl davranış nümunələri, bəzən fiziki və ya seksual zorakılıqla və ya bu zorakılıqla hədələməklə müşayiət olunur</li>
                             <li className="my-4"><b className="text-[#81689D] text-lg italic">Psixoloji və/və ya emosional zorakılıq</b> – daim tənqid, manipulyasiya, günahkar hiss etdirmə və alçaltma</li>
-                            <li className="my-4"><b className="text-[#81689D] text-lg italic">Fiziki və ya seksual zorakılıq</b> – bədənə qarşı tətbiq olunan güc və ya razılıq olmadan cinsi təmas</li>
+                            <li className="my-4"><b className="text-[#81689D] text-lg italic">Fiziki zorakılıq</b> – bədənə qarşı tətbiq olunan güc və ya razılıq olmadan cinsi təmas</li>
                             <li className="my-4"><b className="text-[#81689D] text-lg italic">Maliyyə və ya iqtisadi zorakılıq</b> – maddi imkanların məhdudlaşdırılması, gəlirin gizlədilməsi və maliyyə üzərində tam nəzarət</li>
                             <li className="my-4"><b className="text-[#81689D] text-lg italic">Təqib və narahat etmə</b> – ardıcıl şəkildə izləmək, təhdid etmək və şəxsi sərhədləri pozmaq</li>
                             <li className="my-4"><b className="text-[#81689D] text-lg italic">Onlayn və ya rəqəmsal zorakılıq</b> – mesajlar, sosial media, e-poçt və digər onlayn vasitələrlə təqib, təhdid və nəzarət</li>

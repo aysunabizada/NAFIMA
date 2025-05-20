@@ -2,9 +2,9 @@ import { Link } from "react-router";
 
 const navigation = {
     main: [
-        { name: 'Identify Abuse', href: '#' },
+        { name: 'Zorakılıq nədir?', href: 'whatIsAbuse' },
         { name: 'Biz kimik?', href: '/about' },
-        { name: 'Dəstək ol', href: '#' },
+        // { name: 'Dəstək ol', href: '#' },
         { name: 'FAQs', href: '/FAQ' },
         { name: 'Gizlilik Siyasəti', href: '/privacy-policy' },
         { name: 'Donate', href: '/donate' },

@@ -18,14 +18,14 @@ function Header() {
 
                 {/* Desktop Menyu */}
                 <div className="hidden lg:flex text-nowrap items-center gap-[4vw] font-semibold">
-                    <Link to={"/whatIsAbuse"} className="transition-all relative duration-300 popover-open">Zorakılıq nədir?
-                        <div className="popover text-nowrap bg-[#DBDFEA] p-5 z-10 rounded-md">
+                    <Link to={"/whatIsAbuse"} className="transition-all relative duration-300 hover:text-[#81689D] popover-open">Zorakılıq nədir?
+                        {/* <div className="popover text-nowrap bg-[#DBDFEA] p-5 z-10 rounded-md">
                             <span className="polygon"></span>
                             <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">İnsanlar niyə zorakılıq edirlər?</p></Link>
                             <Link to={'/statistics'}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Zorakılıq nə qədər yayğındır?</p></Link>
                             <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2">Zorakılığının tanınması</p></Link>
                             <Link to={''}><p className="hover:text-[#474F7A] hover:underline transition-all duration-300 my-2"> Zorakılığın xəbərdaredici əlamətləri</p></Link>
-                        </div>
+                        </div> */}
                     </Link>
                     <Link to={"/about"} className="hover:text-[#81689D] transition-all duration-300">Biz Kimik?</Link>
                     {/* <Link to={""} className="hover:text-[#81689D] transition-all duration-300">Dəstək Ol</Link> */}

@@ -20,7 +20,7 @@ function InNumbers() {
                         Zorakılıqla mübarizədə güc birlikdədir!
                     </p>
                 </div>
-                <dl data-aos="fade-left" data-aos-duration="1500" className="mt-10 text-center sm:mx-auto sm:grid sm:max-w-3xl sm:grid-cols-3 sm:gap-12">
+                <dl data-aos="flip-up" data-aos-duration="2000" className="mt-10 text-center sm:mx-auto sm:grid sm:max-w-3xl sm:grid-cols-3 sm:gap-12">
                     <div className="flex flex-col">
                         <dt className="order-2 mt-2 text-xs leading-6 text-indigo-200">Fərqli bölgələrdə <br /> xidmətlər</dt>
                         <dd className="order-1 text-6xl font-bold tracking-tight text-white">
